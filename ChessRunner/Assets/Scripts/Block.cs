@@ -12,7 +12,7 @@ public class Block : MonoBehaviour
     [Tooltip("Get all the Tiles in a Block")]
     public List<GameObject> TilesList = new List<GameObject>();
 
-    public GameObject BlocksHandler;
+    public GameObject BlocksHandlerGO;
     
     private bool alreadyCreatedNewBlock = false;
 
@@ -102,8 +102,9 @@ public class Block : MonoBehaviour
 
         yield return new WaitForSeconds(0.0f);
 
-        newBlock = Instantiate(this.gameObject, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + 5.61f, this.gameObject.transform.position.z), Quaternion.identity, BlocksHandler.transform) as GameObject;
-        newBlock.name = "Block3x3 Inst";
+        newBlock = Instantiate(this.gameObject, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + 5.61f, this.gameObject.transform.position.z), Quaternion.identity, BlocksHandlerGO.transform) as GameObject;
+        BlockHandler.numberOfBlocks++;
+        newBlock.name = "Block3x3 Inst " + BlockHandler.numberOfBlocks;
 
         if (colorSwitch)
         {

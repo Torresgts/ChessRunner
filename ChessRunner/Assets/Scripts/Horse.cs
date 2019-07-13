@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class Horse : MonoBehaviour
 {
+    public static GameObject horse;
+
+    private void Awake()
+    {
+        horse = this.gameObject;
+    }
+
     void Update()
     {
         PositionByInput();
