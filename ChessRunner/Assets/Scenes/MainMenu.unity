@@ -516,11 +516,61 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3393202604807123582, guid: 08e50cd0b3dcd0e42b480bcc835a965b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3393202604807123582, guid: 08e50cd0b3dcd0e42b480bcc835a965b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3393202604807123582, guid: 08e50cd0b3dcd0e42b480bcc835a965b,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3393202604807123582, guid: 08e50cd0b3dcd0e42b480bcc835a965b,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3393202604807123581, guid: 08e50cd0b3dcd0e42b480bcc835a965b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 390848233842267729}
+    - target: {fileID: 3393202606258918222, guid: 08e50cd0b3dcd0e42b480bcc835a965b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3393202606258918222, guid: 08e50cd0b3dcd0e42b480bcc835a965b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3393202606258918222, guid: 08e50cd0b3dcd0e42b480bcc835a965b,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3393202606258918222, guid: 08e50cd0b3dcd0e42b480bcc835a965b,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3393202606258918221, guid: 08e50cd0b3dcd0e42b480bcc835a965b,
+        type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3393202606258918221, guid: 08e50cd0b3dcd0e42b480bcc835a965b,
+        type: 3}
+      propertyPath: m_FontData.m_AlignByGeometry
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08e50cd0b3dcd0e42b480bcc835a965b, type: 3}
 --- !u!1001 &3988757767563356387
