@@ -516,26 +516,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 3393202604807123582, guid: 08e50cd0b3dcd0e42b480bcc835a965b,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3393202604807123581, guid: 08e50cd0b3dcd0e42b480bcc835a965b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 390848233842267729}
-    - target: {fileID: 3393202604807123581, guid: 08e50cd0b3dcd0e42b480bcc835a965b,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GoToGameplay
-      objectReference: {fileID: 0}
-    - target: {fileID: 3393202604807123581, guid: 08e50cd0b3dcd0e42b480bcc835a965b,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08e50cd0b3dcd0e42b480bcc835a965b, type: 3}
 --- !u!1001 &3988757767563356387
