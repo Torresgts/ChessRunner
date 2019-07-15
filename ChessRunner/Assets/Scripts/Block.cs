@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Block : MonoBehaviour
 {
     /// <summary>
     /// An Array that have all tiles in this GameObject. Use to get tiles positions, Components.
     /// </summary>
-    public static GameObject[,] Tile = new GameObject[3, 3];
+    public static GameObject[,] TileGO = new GameObject[3, 3];
 
     [Tooltip("Get all the Tiles in a Block")]
     public List<GameObject> TilesList = new List<GameObject>();
@@ -17,7 +18,7 @@ public class Block : MonoBehaviour
     private bool alreadyCreatedNewBlock = false;
 
     //it's a auxiliar variable to define wich color pattern the Block will have.
-    bool colorSwitch; 
+    bool colorSwitch;
 
     void Start()
     {
@@ -52,7 +53,7 @@ public class Block : MonoBehaviour
         {
             if (row == 0 && columm <= 2)
             {
-                Tile[row, columm] = tile.gameObject;
+                TileGO[row, columm] = tile.gameObject;
                 //Debug.Log("Name :" + tile.name + "Position :" + tile.transform.position);
                 columm++;
             }
@@ -64,7 +65,7 @@ public class Block : MonoBehaviour
 
             if (row == 1 && columm <= 2)
             {
-                Tile[row, columm] = tile.gameObject;
+                TileGO[row, columm] = tile.gameObject;
                 //Debug.Log("Name :" + tile.name + "Position :" + tile.transform.position);
                 columm++;
             }
@@ -76,7 +77,7 @@ public class Block : MonoBehaviour
 
             if (row == 2 && columm <= 2)
             {
-                Tile[row, columm] = tile.gameObject;
+                TileGO[row, columm] = tile.gameObject;
                 //Debug.Log("Name :" + tile.name + "Position :" + tile.transform.position);
                 columm++;
             }
@@ -102,9 +103,11 @@ public class Block : MonoBehaviour
 
         yield return new WaitForSeconds(0.0f);
 
-        newBlock = Instantiate(this.gameObject, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + 5.61f, this.gameObject.transform.position.z), Quaternion.identity, BlocksHandlerGO.transform) as GameObject;
+        //newBlock = Instantiate(this.gameObject, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + 5.61f, this.gameObject.transform.position.z), Quaternion.identity, BlocksHandlerGO.transform) as GameObject;
+        newBlock = Instantiate(Resources.Load("Block3x3"), new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + 5.61f, this.gameObject.transform.position.z), Quaternion.identity, SceneHandler.BlockHandlerGameObject.transform) as GameObject;
         BlockHandler.numberOfBlocks++;
         newBlock.name = "Block3x3 Inst " + BlockHandler.numberOfBlocks;
+
 
         if (colorSwitch)
         {
