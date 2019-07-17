@@ -8,16 +8,35 @@ public class BlockHandler : MonoBehaviour
 
     public static int numberOfBlocks = 1;
 
-    public float vel = 2f;
+    public float vel = 208f;
+
+    bool blockCanMove = false;
+    float waitToMove = 3f;
 
     // Update is called once per frame
     void Update()
     {
+       // StartCoroutine(MoveConfig());
         MoveBlocks(); 
     }
 
     private void MoveBlocks()
     {
         transform.position += direction * vel * Time.deltaTime;
+
+        //if (blockCanMove)
+        //{
+        //    transform.position += direction * vel * Time.deltaTime;
+        //}
+        
     }
+
+    //IEnumerator MoveConfig()
+    //{
+    //    yield return new WaitForSeconds(waitToMove);
+    //    blockCanMove = true;
+    //    yield return new WaitForSeconds(waitToMove);
+    //    blockCanMove = false;
+    //    StartCoroutine(MoveConfig());
+    //}
 }
