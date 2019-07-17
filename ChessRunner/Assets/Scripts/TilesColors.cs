@@ -20,24 +20,46 @@ public class TilesColors : MonoBehaviour
             Block.TileGO[0, 0].GetComponent<Image>().color = firstColor;
             Block.TileGO[0, 1].GetComponent<Image>().color = secondColor;
             Block.TileGO[0, 2].GetComponent<Image>().color = firstColor;
+            Block.TileGO[0, 3].GetComponent<Image>().color = secondColor;
             Block.TileGO[1, 0].GetComponent<Image>().color = secondColor;
             Block.TileGO[1, 1].GetComponent<Image>().color = firstColor;
             Block.TileGO[1, 2].GetComponent<Image>().color = secondColor;
+            Block.TileGO[1, 3].GetComponent<Image>().color = firstColor;
             Block.TileGO[2, 0].GetComponent<Image>().color = firstColor;
             Block.TileGO[2, 1].GetComponent<Image>().color = secondColor;
             Block.TileGO[2, 2].GetComponent<Image>().color = firstColor;
+            Block.TileGO[2, 3].GetComponent<Image>().color = secondColor;
+            Block.TileGO[3, 0].GetComponent<Image>().color = secondColor;
+            Block.TileGO[3, 1].GetComponent<Image>().color = firstColor;
+            Block.TileGO[3, 2].GetComponent<Image>().color = secondColor;
+            Block.TileGO[3, 3].GetComponent<Image>().color = firstColor;
+            Block.TileGO[4, 0].GetComponent<Image>().color = firstColor;
+            Block.TileGO[4, 1].GetComponent<Image>().color = secondColor;
+            Block.TileGO[4, 2].GetComponent<Image>().color = firstColor;
+            Block.TileGO[4, 3].GetComponent<Image>().color = secondColor;
         }
         else
         {
             Block.TileGO[0, 0].GetComponent<Image>().color = secondColor;
             Block.TileGO[0, 1].GetComponent<Image>().color = firstColor;
             Block.TileGO[0, 2].GetComponent<Image>().color = secondColor;
+            Block.TileGO[0, 3].GetComponent<Image>().color = firstColor;
             Block.TileGO[1, 0].GetComponent<Image>().color = firstColor;
             Block.TileGO[1, 1].GetComponent<Image>().color = secondColor;
             Block.TileGO[1, 2].GetComponent<Image>().color = firstColor;
+            Block.TileGO[1, 3].GetComponent<Image>().color = secondColor;
             Block.TileGO[2, 0].GetComponent<Image>().color = secondColor;
             Block.TileGO[2, 1].GetComponent<Image>().color = firstColor;
             Block.TileGO[2, 2].GetComponent<Image>().color = secondColor;
+            Block.TileGO[2, 3].GetComponent<Image>().color = firstColor;
+            Block.TileGO[3, 0].GetComponent<Image>().color = firstColor;
+            Block.TileGO[3, 1].GetComponent<Image>().color = secondColor;
+            Block.TileGO[3, 2].GetComponent<Image>().color = firstColor;
+            Block.TileGO[3, 3].GetComponent<Image>().color = secondColor;
+            Block.TileGO[4, 0].GetComponent<Image>().color = secondColor;
+            Block.TileGO[4, 1].GetComponent<Image>().color = firstColor;
+            Block.TileGO[4, 2].GetComponent<Image>().color = secondColor;
+            Block.TileGO[4, 3].GetComponent<Image>().color = firstColor;
         }
 
     }
