@@ -9,6 +9,7 @@ public class Horse : MonoBehaviour
     private void Awake()
     {
         horse = this.gameObject;
+        
     }
 
     void Update()
