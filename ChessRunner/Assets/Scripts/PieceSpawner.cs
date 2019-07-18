@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class PieceSpawner : MonoBehaviour
 {
+    [SerializeField]
+    private ChunkTileListScriptableObject chunkTileList;
+    
+    [SerializeField]
+    private int chunkIndex;
+
     // Start is called before the first frame update
     void Start()
     {
-        //print(GetEnemiesInChunk());
-
-        //EnemySpawner(GetEnemiesInChunk());
-
-        
-        
+        GetEnemiesInChunk();
     }
 
     // Update is called once per frame
@@ -20,38 +21,24 @@ public class PieceSpawner : MonoBehaviour
     {
         
     }
-    
-    public static EnemyType[,] GetEnemiesInChunk()
+
+    public EnemyType[,] GetEnemiesInChunk()
     {
-        EnemyType[,] _enemies = new EnemyType[5,4];
+        var _chunkTile = chunkTileList.chunkTiles[chunkIndex];
 
-        for(byte a=0; a<5;a++)
+
+
+        EnemyType[,] _enemies = new EnemyType[_chunkTile.chunkTile.Length,_chunkTile.chunkTile[0].enemies.Length];
+
+        for(byte a=0; a<_enemies.GetLength(0);a++)
         {
-            for(byte b=0; b<4;b++)
+            for(byte b=0; b<_enemies.GetLength(1);b++)
             {
-                _enemies[a,b] = EnemyType.Pawn;
-
-                GameObject enemyObject;
-                enemyObject = Instantiate(Resources.Load(_enemies[a, b].ToString()), new Vector3(Block.TileGO[a, b].transform.position.x, Block.TileGO[a, b].transform.position.y, Block.TileGO[a, b].transform.position.z), Quaternion.identity, Block.TileGO[a, b].transform) as GameObject;
-                 
-               
+                _enemies[a,b] = _chunkTile.chunkTile[a].enemies[b];
+                Debug.Log(_enemies[a,b]);
             }
         }
-
-        _enemies[0,3] = EnemyType.Pawn;
-
-
+        
         return _enemies;
-    }
-
-    public static void Spawn(EnemyType enemy, GameObject tile)
-    {
-        GameObject enemyGO;
-        enemyGO = Instantiate(Resources.Load(enemy.ToString()), new Vector3(tile.transform.position.x, tile.transform.position.y, tile.transform.position.z), Quaternion.identity, tile.transform) as GameObject;
-    }
-
-    public static void EnemySpawner(EnemyType[,] newEnemy)
-    {
-
     }
 }

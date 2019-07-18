@@ -24,7 +24,7 @@ public class Block : MonoBehaviour
     {
         GetTilesPosition5x4();
 
-        TilesColors.TilesColor(colorSwitch);
+        TilesColors.TilesColor(colorSwitch, BlocksHandlerGO.GetComponent<BlockHandler>());
     }
 
     private void Update()
