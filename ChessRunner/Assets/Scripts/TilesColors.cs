@@ -5,15 +5,22 @@ using UnityEngine.UI;
 
 public class TilesColors : MonoBehaviour
 {
-    public static Color firstColor = new Color32(214, 214, 214, 255);
-    public static Color secondColor = new Color32(255, 255, 255, 255);
+
+
+    public static Color firstColor;
+    public static Color secondColor;
+
 
     /// <summary>
     /// Use in Block (script) colorSwitch to define color sequences.
     /// </summary>
     /// <param name="colorSwitch"></param>
-    public static void TilesColor(bool colorSwitch)
+    public static void TilesColor(bool colorSwitch, BlockHandler blockHandler)
     {
+        
+        var _colorType = blockHandler.colorTypeList.colorTypes[blockHandler.typeColor];
+        firstColor = _colorType.tileA;
+        secondColor = _colorType.tileB;
 
         if (colorSwitch)
         {

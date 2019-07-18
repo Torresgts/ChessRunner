@@ -7,6 +7,9 @@ public class BlockHandler : MonoBehaviour
     Vector3 direction = new Vector3(0, -1, 0);
 
     public static int numberOfBlocks = 1;
+    
+    public int typeColor;
+    public ColorTypeListScriptableObject colorTypeList;
 
     public float vel = 208f;
 
