@@ -6,7 +6,7 @@ public class SceneHandler : MonoBehaviour
 {
     public static GameObject BlockHandlerGameObject;
 
-    public static bool playerIsDead = false;
+
 
     bool instanciedGameOverAlready = false;
 
@@ -15,8 +15,8 @@ public class SceneHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-        BlockHandlerGameObject = Instantiate(Resources.Load("BlocksHandler"), new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + 1, this.gameObject.transform.position.z), Quaternion.identity, gameObject.transform) as GameObject;
+        StartCoroutine(SpawnBlockHandler());
+        
     }
 
     // Update is called once per frame
@@ -27,12 +27,16 @@ public class SceneHandler : MonoBehaviour
 
     public void PlayerLost()
     {
-        if (playerIsDead)
+        if (Horse.playerIsDead)
         {
             // PlayerLost();
             gameOver.SetActive(true);
         }
+    }
 
-
+    IEnumerator SpawnBlockHandler()
+    {
+        yield return new WaitForSeconds(0f);
+        BlockHandlerGameObject = Instantiate(Resources.Load("BlocksHandler"), new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + 1, this.gameObject.transform.position.z), Quaternion.identity, gameObject.transform) as GameObject;
     }
 }

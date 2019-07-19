@@ -22,7 +22,7 @@ public class Bishop : MonoBehaviour
         {
             this.gameObject.transform.position = collision.gameObject.transform.position;
             //Destroy(collision.gameObject);
-            SceneHandler.playerIsDead = true;
+            Horse.playerIsDead = true;
 
         }
     }

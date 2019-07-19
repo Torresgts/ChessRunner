@@ -6,6 +6,8 @@ public class Horse : MonoBehaviour
 {
     public static GameObject horse;
 
+    public static bool playerIsDead = false;
+
     private void Awake()
     {
         horse = this.gameObject;
@@ -23,7 +25,7 @@ public class Horse : MonoBehaviour
 
         if (this.gameObject.transform.position.y <= limit)
         {
-            SceneHandler.playerIsDead = true;
+            playerIsDead = true;
             Destroy(this.gameObject);
         }
     }

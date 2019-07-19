@@ -11,17 +11,16 @@ public class BlockHandler : MonoBehaviour
     [HideInInspector] public int typeColor;
     public ColorTypeListScriptableObject colorTypeList;
 
-    public float vel = 208f;
+    public float vel = 2f;
 
     bool blockCanMove = false;
-    float waitToMove = 2f;
+    float waitToMove = 5f;
 
     private void Start()
     {
         StartCoroutine(MoveConfig());
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
        // StartCoroutine(MoveConfig());
