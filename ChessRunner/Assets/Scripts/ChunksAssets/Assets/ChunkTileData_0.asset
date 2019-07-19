@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f3897061f022ac46908f24d66a42e04, type: 3}
-  m_Name: ChunkTileData_1
+  m_Name: ChunkTileData_0
   m_EditorClassIdentifier: 
   chunkTile:
-  - enemies: 01000000010000000300000001000000
-  - enemies: 00000000000000000000000000000000
+  - enemies: 02000000000000000000000002000000
+  - enemies: 00000000000000000000000001000000
   - enemies: 00000000000000000000000000000000
   - enemies: 00000000000000000000000000000000
   - enemies: 00000000000000000000000000000000
   prohibitedNextList:
-  - {fileID: 11400000}
+  - {fileID: 11400000, guid: d22c1f59c39e5134387ceb51bb3c89b3, type: 2}

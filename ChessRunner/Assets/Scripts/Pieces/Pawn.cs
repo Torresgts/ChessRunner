@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Pawn : MonoBehaviour
 {
+    public GameObject CanvasPanel;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,8 @@ public class Pawn : MonoBehaviour
         {
             this.gameObject.transform.position = collision.gameObject.transform.position;
             //Destroy(collision.gameObject);
+            SceneHandler.playerIsDead = true;
+            
         }
     }
 

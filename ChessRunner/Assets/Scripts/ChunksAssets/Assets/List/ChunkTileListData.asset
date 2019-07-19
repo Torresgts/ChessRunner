@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chunkTiles:
   - {fileID: 11400000, guid: 433597d7447ff22428073ac6dca3d502, type: 2}
+  - {fileID: 11400000, guid: b87289463ebf426439ccbad7e1527a59, type: 2}
+  - {fileID: 11400000, guid: d22c1f59c39e5134387ceb51bb3c89b3, type: 2}

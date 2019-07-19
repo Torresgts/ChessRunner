@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rook : MonoBehaviour
+public class Bishop : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -23,6 +23,7 @@ public class Rook : MonoBehaviour
             this.gameObject.transform.position = collision.gameObject.transform.position;
             //Destroy(collision.gameObject);
             SceneHandler.playerIsDead = true;
+
         }
     }
 }
