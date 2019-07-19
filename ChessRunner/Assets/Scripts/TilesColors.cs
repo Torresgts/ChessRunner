@@ -17,8 +17,10 @@ public class TilesColors : MonoBehaviour
     /// <param name="colorSwitch"></param>
     public static void TilesColor(bool colorSwitch, BlockHandler blockHandler)
     {
+        if(!PlayerPrefs.HasKey("indexColor")) PlayerPrefs.SetInt("indexColor", 0);
+        int _colorIndex = PlayerPrefs.GetInt("indexColor");
         
-        var _colorType = blockHandler.colorTypeList.colorTypes[blockHandler.typeColor];
+        var _colorType = blockHandler.colorTypeList.colorTypes[_colorIndex];
         firstColor = _colorType.tileA;
         secondColor = _colorType.tileB;
 

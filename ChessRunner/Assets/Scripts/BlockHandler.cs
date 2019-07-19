@@ -8,7 +8,7 @@ public class BlockHandler : MonoBehaviour
 
     public static int numberOfBlocks = 1;
     
-    public int typeColor;
+    [HideInInspector] public int typeColor;
     public ColorTypeListScriptableObject colorTypeList;
 
     public float vel = 208f;
