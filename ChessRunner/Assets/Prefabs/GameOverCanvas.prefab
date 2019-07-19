@@ -883,6 +883,8 @@ GameObject:
   - component: {fileID: 7502538621212530732}
   - component: {fileID: 1790464968}
   - component: {fileID: 1790464969}
+  - component: {fileID: 1790464964}
+  - component: {fileID: 7449054186928255497}
   m_Layer: 0
   m_Name: GameOverPopUp
   m_TagString: Untagged
@@ -994,6 +996,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b2f4932ae2927c4cb9b834e3de8f5e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1790464964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7502538621212530722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2f4932ae2927c4cb9b834e3de8f5e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7449054186928255497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7502538621212530722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58832b199e0c5844682c9e4c75041bda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  experienceSlider: {fileID: 7261381181468129800}
+  valueText: {fileID: 3989605592245647068}
+  UnlockableText: {fileID: 1597243753052697403}
+  experienceData: {fileID: 1790464964}
 --- !u!1 &7502538621700957578
 GameObject:
   m_ObjectHideFlags: 0
