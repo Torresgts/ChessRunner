@@ -17,6 +17,9 @@ public class Block : MonoBehaviour
     
     private bool alreadyCreatedNewBlock = false;
 
+    public int index;
+
+
     //it's a auxiliar variable to define wich color pattern the Block will have.
     bool colorSwitch;
 
@@ -25,6 +28,8 @@ public class Block : MonoBehaviour
         GetTilesPosition5x4();
 
         TilesColors.TilesColor(colorSwitch, BlocksHandlerGO.GetComponent<BlockHandler>());
+
+        PieceSpawner.GetEnemiesInChunk();
     }
 
     private void Update()
@@ -36,7 +41,7 @@ public class Block : MonoBehaviour
 
     private void DestroyBlockOnLimit() //If this block get to a Y (vertex) limit, it's destroyed. 
     {
-        float limit = -7.8f;
+        float limit = -8.2f;
 
         if (this.gameObject.transform.position.y <= limit)
         {
@@ -158,7 +163,7 @@ public class Block : MonoBehaviour
         if (this.gameObject.transform.position.y <= createPosition && !alreadyCreatedNewBlock)
         {
             alreadyCreatedNewBlock = true;
-            StartCoroutine(CreateBlock()); //initialize Coroutine CreatorBlock()
+            StartCoroutine(CreateBlock()); //initialize Coroutine CreateBlock()
         }
     }
 
@@ -172,6 +177,8 @@ public class Block : MonoBehaviour
         newBlock = Instantiate(Resources.Load("Block5x4"), new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + 7f, this.gameObject.transform.position.z), Quaternion.identity, SceneHandler.BlockHandlerGameObject.transform) as GameObject;
         BlockHandler.numberOfBlocks++;
         newBlock.name = "Block5x4 Inst " + BlockHandler.numberOfBlocks;
+
+        //PieceSpawner.GetEnemiesInChunk();
 
 
         if (colorSwitch)
