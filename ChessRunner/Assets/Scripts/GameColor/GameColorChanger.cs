@@ -36,7 +36,9 @@ public class GameColorChanger : MonoBehaviour
     public void NextColor()
     {
         indexColor++;
-        if(indexColor >= colorTypeList.colorTypes.Length) indexColor=0;
+        if(indexColor >= colorTypeList.colorTypes.Length || 
+            indexColor >= PlayerPrefs.GetInt("Level")
+        ) indexColor=0;
         selfImage.color = colorTypeList.colorTypes[indexColor].tileA;
         selfText.color = colorTypeList.colorTypes[indexColor].tileB;
         PlayerPrefs.SetInt("indexColor", indexColor);
