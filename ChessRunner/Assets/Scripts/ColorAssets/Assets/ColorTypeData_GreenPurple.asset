@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e92775022a2d14b8af6c45e7ff2f9a, type: 3}
   m_Name: ColorTypeData_GreenPurple
   m_EditorClassIdentifier: 
+  colorName: Purplyan
   tileA: {r: 0.3529412, g: 0.2784314, b: 0.8000001, a: 1}
   tileB: {r: 0.3019608, g: 0.86666673, b: 0.72156864, a: 1}
   pieces: {r: 0, g: 0, b: 0, a: 1}

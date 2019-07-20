@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e92775022a2d14b8af6c45e7ff2f9a, type: 3}
   m_Name: ColorTypeData_RedIce
   m_EditorClassIdentifier: 
+  colorName: Cold Candy
   tileA: {r: 1, g: 0.4784314, b: 0.5411765, a: 1}
   tileB: {r: 0.9490197, g: 0.9490197, b: 1, a: 1}
   pieces: {r: 0.06666667, g: 0.227451, b: 0.3647059, a: 1}

@@ -11,6 +11,8 @@ public class ExperienceUpBehaviour : MonoBehaviour
 
     public ExperienceData experienceData;
 
+    public ColorTypeListScriptableObject colorTypeList;
+
     private void OnEnable()
     {
         StartCoroutine(FillExperience());
@@ -53,6 +55,8 @@ public class ExperienceUpBehaviour : MonoBehaviour
             experienceData.SetLevel(experienceData.GetLevel()+1);
 
             UnlockableText.gameObject.SetActive(true);
+
+            UnlockableText.text = string.Format("<color=red> Unlocked Color : </color> \n <b> {0} </b>", colorTypeList.colorTypes[experienceData.GetLevel()-1].colorName);
 
             
             valueText.text = string.Format("{0}/{1}", 0, GetMaxExperience());

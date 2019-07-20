@@ -31,6 +31,7 @@ public class GameColorChanger : MonoBehaviour
 
         selfImage.color = colorTypeList.colorTypes[indexColor].tileA;
         selfText.color = colorTypeList.colorTypes[indexColor].tileB;
+        selfText.text = string.Format("CHANGE COLOR : {0}", indexColor+1);
     }
 
     public void NextColor()
@@ -41,6 +42,7 @@ public class GameColorChanger : MonoBehaviour
         ) indexColor=0;
         selfImage.color = colorTypeList.colorTypes[indexColor].tileA;
         selfText.color = colorTypeList.colorTypes[indexColor].tileB;
+        selfText.text = string.Format("CHANGE COLOR : {0}", indexColor+1);
         PlayerPrefs.SetInt("indexColor", indexColor);
     }
 

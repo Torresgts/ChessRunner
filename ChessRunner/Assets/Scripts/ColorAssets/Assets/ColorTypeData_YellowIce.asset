@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1e92775022a2d14b8af6c45e7ff2f9a, type: 3}
   m_Name: ColorTypeData_YellowIce
   m_EditorClassIdentifier: 
+  colorName: Ice Banana
   tileA: {r: 0.96470594, g: 0.78823537, b: 0.054901965, a: 1}
   tileB: {r: 0.9333334, g: 0.9333334, b: 0.9333334, a: 1}
   pieces: {r: 0, g: 0, b: 0, a: 1}

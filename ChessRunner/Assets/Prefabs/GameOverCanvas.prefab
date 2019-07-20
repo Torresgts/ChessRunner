@@ -984,6 +984,7 @@ MonoBehaviour:
   valueText: {fileID: 3989605592245647068}
   UnlockableText: {fileID: 1597243753052697403}
   experienceData: {fileID: 1790464969}
+  colorTypeList: {fileID: 11400000, guid: c8c83f3b76a5faa4386fade954a03ba1, type: 2}
 --- !u!114 &1790464969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1024,6 +1025,7 @@ MonoBehaviour:
   valueText: {fileID: 3989605592245647068}
   UnlockableText: {fileID: 1597243753052697403}
   experienceData: {fileID: 1790464964}
+  colorTypeList: {fileID: 11400000, guid: c8c83f3b76a5faa4386fade954a03ba1, type: 2}
 --- !u!1 &7502538621700957578
 GameObject:
   m_ObjectHideFlags: 0
