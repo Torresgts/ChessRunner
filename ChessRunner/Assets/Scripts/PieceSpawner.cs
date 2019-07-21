@@ -16,9 +16,12 @@ public class PieceSpawner : MonoBehaviour
 
     private static ChunkTileScriptableObject lastChunkSpawned;
 
+    private static int numberOfTimesToSpawnClearOne = 1; 
+
 
     void Start()
     {
+        numberOfTimesToSpawnClearOne= 1;
         chunkTileListAux = chunkTileList;
 
         lastChunkSpawned = chunkTileListAux.chunkTiles[0];
@@ -101,7 +104,13 @@ public class PieceSpawner : MonoBehaviour
 
     public static EnemyType[,] GetEnemiesInChunk()
     {
-        chunkIndex = Random.Range(0, chunkTileListAux.chunkTiles.Length);
+        if(numberOfTimesToSpawnClearOne > 0)
+        {
+            chunkIndex = 0;
+            numberOfTimesToSpawnClearOne--;
+        } else {
+            chunkIndex = Random.Range(0, chunkTileListAux.chunkTiles.Length);
+        }
 
         var _chunkTile = chunkTileListAux.chunkTiles[chunkIndex];
 

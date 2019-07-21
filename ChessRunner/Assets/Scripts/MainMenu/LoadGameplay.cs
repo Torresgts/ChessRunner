@@ -7,6 +7,7 @@ public class LoadGameplay : MonoBehaviour
 {
 	public void LoadSceneGameplay()
 	{
+		GameObject.FindObjectOfType<MusicManager>().ChangeMusic();
 		StartCoroutine(LoadGameplayAsync());
 	}
 
@@ -14,6 +15,12 @@ public class LoadGameplay : MonoBehaviour
 	public void ReloadSceneGameplay()
 	{
 		StartCoroutine(LoadGameplayAsync());
+        Horse.playerIsDead = false;
+	}
+
+	public void LoadMainMenu()
+	{
+		StartCoroutine(LoadMainMenuAsync());
         Horse.playerIsDead = false;
 	}
 

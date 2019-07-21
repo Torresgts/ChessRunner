@@ -12,6 +12,8 @@ public class SceneHandler : MonoBehaviour
 
     public GameObject gameOver;
 
+    private BlockHandler blockHandler;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +32,9 @@ public class SceneHandler : MonoBehaviour
         if (Horse.playerIsDead)
         {
             // PlayerLost();
+            if(blockHandler == null) blockHandler = GameObject.FindObjectOfType<BlockHandler>();
+            blockHandler.StopMoving();
+
             gameOver.SetActive(true);
         }
     }

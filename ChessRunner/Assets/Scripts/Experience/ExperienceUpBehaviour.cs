@@ -13,6 +13,9 @@ public class ExperienceUpBehaviour : MonoBehaviour
 
     public ColorTypeListScriptableObject colorTypeList;
 
+    public GameObject tryAgainButton;
+    public GameObject mainMenuButton;
+
     private void OnEnable()
     {
         StartCoroutine(FillExperience());
@@ -44,6 +47,8 @@ public class ExperienceUpBehaviour : MonoBehaviour
 
         experienceData.SetExperience(_cachedExperience);
         yield return new WaitForSeconds(0.2f);
+        tryAgainButton.SetActive(true);
+        mainMenuButton.SetActive(true);
         VerifyUnlockable();
     } 
 

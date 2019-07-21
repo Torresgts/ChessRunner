@@ -10,6 +10,8 @@ public class Tile : MonoBehaviour
     //public static Image TileButtonImage;
     Animator TileAnim;
 
+    BlockHandler blockHandler;
+
 
 
     private void Awake()
@@ -53,6 +55,8 @@ public class Tile : MonoBehaviour
 
     void HorseToThisPosition()
     {
+        if(blockHandler == null) blockHandler = GameObject.FindObjectOfType<BlockHandler>();
+        blockHandler.StartMoving();
         Horse.horse.transform.position = this.gameObject.transform.position;
     }
 
