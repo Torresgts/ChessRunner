@@ -174,7 +174,7 @@ public class Block : MonoBehaviour
         yield return new WaitForSeconds(0.0f);
 
         //newBlock = Instantiate(this.gameObject, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + 5.61f, this.gameObject.transform.position.z), Quaternion.identity, BlocksHandlerGO.transform) as GameObject;
-        newBlock = Instantiate(Resources.Load("Block5x4"), new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + 7f, this.gameObject.transform.position.z), Quaternion.identity, SceneHandler.BlockHandlerGameObject.transform) as GameObject;
+        newBlock = Instantiate(Resources.Load("Block5x4"), new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + 6.53f, this.gameObject.transform.position.z), Quaternion.identity, SceneHandler.BlockHandlerGameObject.transform) as GameObject;
         BlockHandler.numberOfBlocks++;
         newBlock.name = "Block5x4 Inst " + BlockHandler.numberOfBlocks;
 

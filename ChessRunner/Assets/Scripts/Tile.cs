@@ -12,11 +12,14 @@ public class Tile : MonoBehaviour
 
     BlockHandler blockHandler;
 
+    public static Horse horseGO;
 
 
     private void Awake()
     {
         TileConfigs();
+
+        horseGO = FindObjectOfType<Horse>();
     }
 
 
@@ -34,7 +37,7 @@ public class Tile : MonoBehaviour
 
     #region OnTrigger Functions
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Horse"))
         {
@@ -57,7 +60,42 @@ public class Tile : MonoBehaviour
     {
         if(blockHandler == null) blockHandler = GameObject.FindObjectOfType<BlockHandler>();
         blockHandler.StartMoving();
-        Horse.horse.transform.position = this.gameObject.transform.position;
+
+        //Horse.horse.transform.position = this.gameObject.transform.position;
+
+
+
+        //When Start
+
+        OnStartHorseMove();
+
+        Horse.horse.transform.parent = this.gameObject.transform;
+
+        iTween.MoveTo(Horse.horse,
+            iTween.Hash(
+            "position", new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + 45f, this.gameObject.transform.position.z),
+            "time", 0.8f,
+            "easetype", iTween.EaseType.easeInQuad,
+            "islocal", true,
+            "oncomplete", "OnFinishedHorseMove",
+            "oncompletetarget", gameObject
+            ));
+
+       
+        iTween.ShakePosition(BlockHandler.BlockHandlerGO,
+            iTween.Hash(
+                "amount", new Vector3(0.02f, 0.03f, 0.04f),
+                "time", 0.08f
+                ));
+
+        //When Finishes
+        iTween.ShakePosition(BlockHandler.BlockHandlerGO,
+            iTween.Hash(
+                "amount", new Vector3(0.04f, 0.06f, 0.08f),
+                "time", 0.2f,
+                "delay", 0.8f
+                ));
+
     }
 
     private void TileConfigs()
@@ -72,6 +110,39 @@ public class Tile : MonoBehaviour
         TileAnim.SetBool("PossibleMove", false);
     }
 
-    
 
+    public void OnStartHorseMove()
+    {
+        TurnAllHorseColliderOff();
+    }
+
+    public void OnFinishedHorseMove()
+    {
+        //COLOCAR SOM DO CAVALO TERMINANDO MOVIMENTO AQUI
+
+        TurnAllHorseColliderOn();
+    }
+
+    private static void TurnAllHorseColliderOn()
+    {
+       
+       
+
+        foreach (Collider2D colHint in horseGO.hintList)
+        {
+            colHint.enabled = true;
+        }
+
+        horseGO.playerCol.enabled = true;
+    }
+
+    private static void TurnAllHorseColliderOff()
+    {
+        foreach (Collider2D colHint in horseGO.hintList)
+        {
+            colHint.enabled = false;
+        }
+
+        horseGO.playerCol.enabled = false;
+    }
 }

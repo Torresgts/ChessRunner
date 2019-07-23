@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BlockHandler : MonoBehaviour
 {
+
+    public static GameObject BlockHandlerGO;
     Vector3 direction = new Vector3(0, -1, 0);
 
     public static int numberOfBlocks = 1;
@@ -14,10 +16,15 @@ public class BlockHandler : MonoBehaviour
     public float vel = 2f;
 
     bool blockCanMove = false;
-    float waitToMove = 5f;
+    float waitToMove = 2f;
 
     bool gameCanMove = false;
     bool playerDied = false;
+
+    private void Awake()
+    {
+        BlockHandlerGO = this.gameObject;
+    }
 
     private void Start()
     {
@@ -26,7 +33,7 @@ public class BlockHandler : MonoBehaviour
     
     void Update()
     {
-       // StartCoroutine(MoveConfig());
+        // StartCoroutine(MoveConfig());
         //MoveBlocks(); 
     }
 
@@ -52,9 +59,22 @@ public class BlockHandler : MonoBehaviour
     IEnumerator MoveConfig()
     {
         yield return new WaitForSeconds(waitToMove);
-        iTween.MoveAdd(this.gameObject, new Vector3(0, -4, 0), 2);
+        //iTween.MoveAdd(this.gameObject, new Vector3(0, -4, 0), 2);
+
+        iTween.MoveAdd(this.gameObject, 
+            iTween.Hash(
+            "amount", new Vector3(0, -4, 0),
+            "time", 2f,
+            "easetype", iTween.EaseType.easeInOutQuad
+            ));
+
         yield return new WaitForSeconds(waitToMove);
         
         if(!playerDied) StartCoroutine(MoveConfig());
+    }
+
+    public static void ShakeBlocks()
+    {
+        iTween.ShakePosition(BlockHandler.BlockHandlerGO, new Vector3(0.1f, 0.2f, 0.3f), 0.3f);
     }
 }

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: ColorTypeData_Default
   m_EditorClassIdentifier: 
   colorName: Initial
-  tileA: {r: 0.8392157, g: 0.8392157, b: 0.8392157, a: 1}
-  tileB: {r: 1, g: 1, b: 1, a: 1}
+  tileA: {r: 0.09019608, g: 0.3019608, b: 0.36078432, a: 1}
+  tileB: {r: 0.59607846, g: 0.6862745, b: 0.6039216, a: 1}
   pieces: {r: 0, g: 0, b: 0, a: 1}

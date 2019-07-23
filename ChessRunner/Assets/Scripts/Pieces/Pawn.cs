@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Pawn : MonoBehaviour
 {
@@ -22,10 +23,16 @@ public class Pawn : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("PlayerCollider"))
         {
-            this.gameObject.transform.position = collision.gameObject.transform.position;
-            //Destroy(collision.gameObject);
-            Horse.playerIsDead = true;
+            //this.gameObject.transform.position = collision.gameObject.transform.position;
+            iTween.MoveTo(this.gameObject, new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, collision.gameObject.transform.position.z), 1f);
+
+            this.gameObject.transform.parent = collision.gameObject.transform;
+
+            Horse.horse.gameObject.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
             
+            Horse.playerIsDead = true;
+
+            BlockHandler.ShakeBlocks();
         }
     }
 
