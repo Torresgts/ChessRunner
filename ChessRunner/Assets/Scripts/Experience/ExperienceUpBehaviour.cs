@@ -18,7 +18,16 @@ public class ExperienceUpBehaviour : MonoBehaviour
 
     private void OnEnable()
     {
-        StartCoroutine(FillExperience());
+
+        if(experienceData.GetLevel() > colorTypeList.colorTypes.Length)
+        {
+            valueText.gameObject.SetActive(false);
+            experienceSlider.gameObject.SetActive(false);
+            tryAgainButton.SetActive(true);
+            mainMenuButton.SetActive(true);
+        } else {
+            StartCoroutine(FillExperience());
+        }
     }
 
     private IEnumerator FillExperience()
