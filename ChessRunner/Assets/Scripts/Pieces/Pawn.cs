@@ -7,10 +7,16 @@ public class Pawn : MonoBehaviour
 {
     public GameObject CanvasPanel;
 
+    RectTransform rt;
+
+   // public Collider2D[] col;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        rt = this.gameObject.GetComponent<RectTransform>();
+        rt.sizeDelta = new Vector2(250, 250);
+
     }
 
     // Update is called once per frame
@@ -21,6 +27,9 @@ public class Pawn : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+       // col[0].IsTouching(collision.gameObject.);
+
+
         if(collision.gameObject.CompareTag("PlayerCollider"))
         {
             //this.gameObject.transform.position = collision.gameObject.transform.position;

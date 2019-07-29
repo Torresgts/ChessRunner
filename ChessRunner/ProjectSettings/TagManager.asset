@@ -7,6 +7,7 @@ TagManager:
   - Horse
   - Rook
   - PlayerCollider
+  - Piece
   layers:
   - Default
   - TransparentFX

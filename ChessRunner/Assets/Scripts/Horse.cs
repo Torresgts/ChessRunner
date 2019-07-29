@@ -39,7 +39,7 @@ public class Horse : MonoBehaviour
 
     private void DestroyHorseOnLimit() //If this block get to a Y (vertex) limit, it's destroyed. 
     {
-        float limit = -6.2f;
+        float limit = -5.8f;
 
         if (this.gameObject.transform.position.y <= limit)
         {

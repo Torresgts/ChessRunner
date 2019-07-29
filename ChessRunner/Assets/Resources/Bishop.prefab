@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 5694709471188065552}
   m_Layer: 0
   m_Name: Bishop
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,7 +115,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 269.2, y: -345}
+  m_Offset: {x: 269.2, y: -280}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -141,7 +141,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 524.5, y: -600}
+  m_Offset: {x: 524.5, y: -518}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -167,7 +167,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -274.9, y: -345}
+  m_Offset: {x: -274.9, y: -280}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -193,7 +193,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -536.4, y: -623.1}
+  m_Offset: {x: -536.4, y: -518}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -218,3 +218,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53f946023a871754890cc5bf6bd76ec7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  col:
+  - {fileID: 834940795617810359}
+  - {fileID: 7655324686531295363}
+  - {fileID: 544012679092770466}
+  - {fileID: 544012679092770469}
