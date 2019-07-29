@@ -19,30 +19,25 @@ public class Pawn : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    //It's a solution to the pieces positions get local.
+    //    //This is not the better solution.. but works.
+    //    if (collision.gameObject.CompareTag("Tile"))
+    //    {
+    //        this.gameObject.transform.parent = collision.gameObject.transform;
+    //    }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-       // col[0].IsTouching(collision.gameObject.);
+    //    if (collision.gameObject.CompareTag("PlayerCollider"))
+    //    {
+    //        iTween.MoveTo(this.gameObject, new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, collision.gameObject.transform.position.z), 1f);
 
-
-        if(collision.gameObject.CompareTag("PlayerCollider"))
-        {
-            //this.gameObject.transform.position = collision.gameObject.transform.position;
-            iTween.MoveTo(this.gameObject, new Vector3(collision.gameObject.transform.position.x, collision.gameObject.transform.position.y, collision.gameObject.transform.position.z), 1f);
-
-            this.gameObject.transform.parent = collision.gameObject.transform;
-
-            Horse.horse.gameObject.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
+    //        Horse.horse.gameObject.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
             
-            Horse.playerIsDead = true;
+    //        Horse.playerIsDead = true;
 
-            BlockHandler.ShakeBlocks();
-        }
-    }
+    //        BlockHandler.ShakeBlocks();
+    //    }
+    //}
 
 }
