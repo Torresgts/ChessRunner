@@ -131,7 +131,7 @@ public class PieceSpawner : MonoBehaviour
                     //Debug.Log(_enemies[a,b]);
 
                     GameObject newEnemy;
-                    newEnemy = Instantiate(Resources.Load(_enemies[a, b].ToString()), new Vector3(Block.TileGO[a, b].transform.position.x, Block.TileGO[a, b].transform.position.y, Block.TileGO[a, b].transform.position.z), Quaternion.identity, Block.TileGO[a, b].transform) as GameObject;
+                    newEnemy = Instantiate(Resources.Load(_enemies[a, b].ToString()), new Vector3(Block.TileGO[a, b].transform.position.x, Block.TileGO[a, b].transform.position.y + 0.20f, Block.TileGO[a, b].transform.position.z), Quaternion.identity, Block.TileGO[a, b].transform) as GameObject;
 
                     lastChunkSpawned = _chunkTile;
                 }

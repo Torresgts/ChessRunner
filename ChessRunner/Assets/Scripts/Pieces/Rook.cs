@@ -5,16 +5,15 @@ using UnityEngine.UI;
 
 public class Rook : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    RectTransform rt;
+
+    public Collider2D[] col;
+
+    private void Awake()
     {
-        
+        rt = this.gameObject.GetComponent<RectTransform>();
+        rt.sizeDelta = new Vector2(250, 250);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

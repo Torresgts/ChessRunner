@@ -180,7 +180,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCol: {fileID: 7630504721276461291}
-  playerColAux: {fileID: 7630504721276461291}
   moveHints:
   - {fileID: 8114649686117318477}
   - {fileID: 8114649686117318476}
@@ -206,7 +205,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 80
+  m_SortingOrder: 20
   m_TargetDisplay: 0
 --- !u!61 &8114649686117318477
 BoxCollider2D:
