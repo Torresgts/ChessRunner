@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3429652427070851497}
   - component: {fileID: 2077691907722468419}
+  - component: {fileID: 8834201742332253826}
   m_Layer: 0
   m_Name: ChildCollider2
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62,6 +63,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 180, y: 180}
   m_EdgeRadius: 0
+--- !u!114 &8834201742332253826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700201580355846752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75b97d11bbc09cc449ed45729889cf01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4778188776094769176
 GameObject:
   m_ObjectHideFlags: 0
@@ -77,6 +90,8 @@ GameObject:
   - component: {fileID: 4778188776094769183}
   - component: {fileID: 4778188776094769182}
   - component: {fileID: 4778188776094769171}
+  - component: {fileID: 8339539447337355564}
+  - component: {fileID: 4804244699521624046}
   m_Layer: 0
   m_Name: Pawn
   m_TagString: Piece
@@ -229,9 +244,53 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CanvasPanel: {fileID: 0}
-  col:
-  - {fileID: 4778188776094769183}
-  - {fileID: 4778188776094769182}
+--- !u!61 &8339539447337355564
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4778188776094769176}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 160, y: 160}
+  m_EdgeRadius: 0
+--- !u!50 &4804244699521624046
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4778188776094769176}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &6080425339965862961
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,6 +301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5565987019276161043}
   - component: {fileID: 7657878427148527923}
+  - component: {fileID: 1906019938749681937}
   m_Layer: 0
   m_Name: ChildCollider1
   m_TagString: Untagged
@@ -294,3 +354,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 180, y: 180}
   m_EdgeRadius: 0
+--- !u!114 &1906019938749681937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6080425339965862961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75b97d11bbc09cc449ed45729889cf01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
