@@ -58,6 +58,8 @@ public class Tile : MonoBehaviour
 
     void HorseToThisPosition()
     {
+        AddPoint();
+
         if(blockHandler == null) blockHandler = GameObject.FindObjectOfType<BlockHandler>();
         blockHandler.StartMoving();
 
@@ -108,6 +110,11 @@ public class Tile : MonoBehaviour
         TileAnim = TileButton.GetComponent<Animator>();
 
         TileAnim.SetBool("PossibleMove", false);
+    }
+
+    private void AddPoint()
+    {
+        GameplayManager.points++;
     }
 
 

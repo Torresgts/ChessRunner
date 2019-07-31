@@ -33,7 +33,7 @@ public class ExperienceUpBehaviour : MonoBehaviour
     private IEnumerator FillExperience()
     {
         int _actualExperience = experienceData.GetExperience();
-        int _adquiredExperience = 15;
+        int _adquiredExperience = GameplayManager.points;
         int _maxExperience = GetMaxExperience();
         int _cachedExperience = _actualExperience;
 
