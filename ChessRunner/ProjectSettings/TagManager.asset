@@ -9,6 +9,7 @@ TagManager:
   - PlayerCollider
   - Piece
   - Tile
+  - TimeStarter
   layers:
   - Default
   - TransparentFX

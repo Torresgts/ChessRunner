@@ -9,6 +9,8 @@ public class Rook : MonoBehaviour
 
     RectTransform rt;
 
+    public int time = 2;
+
     private void Awake()
     {
         rt = this.gameObject.GetComponent<RectTransform>();
