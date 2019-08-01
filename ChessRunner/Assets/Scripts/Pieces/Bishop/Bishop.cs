@@ -9,6 +9,8 @@ public class Bishop : MonoBehaviour
 
     public GameObject[] possibleMoveGO;
 
+    public int time = 2;
+
     private void Awake()
     {
         rt = this.gameObject.GetComponent<RectTransform>();

@@ -7,9 +7,16 @@ public class BishopMoves : MonoBehaviour
 {
     public int childNumber;
 
+    private Bishop bishop;
+
+    private void Awake()
+    {
+        bishop = this.gameObject.transform.parent.gameObject.GetComponent<Bishop>();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("PlayerCollider"))
+        if (collision.gameObject.CompareTag("PlayerCollider") && bishop.time == 0 && !Horse.playerIsDead)
         {
 
             if (childNumber == 1 || childNumber == 3)
