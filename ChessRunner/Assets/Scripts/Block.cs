@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class Block : MonoBehaviour
@@ -10,24 +11,24 @@ public class Block : MonoBehaviour
     /// </summary>
     public static GameObject[,] TileGO = new GameObject[5, 4];
 
-    [Tooltip("Get all the Tiles in a Block")]
-    public List<GameObject> TilesList = new List<GameObject>();
+    [FormerlySerializedAs("TilesList")] [Tooltip("Get all the Tiles in a Block")]
+    public List<GameObject> tilesList = new List<GameObject>();
 
-    public GameObject BlocksHandlerGO;
+    [FormerlySerializedAs("BlocksHandlerGO")] public GameObject blocksHandlerGo;
     
-    private bool alreadyCreatedNewBlock = false;
+    private bool _alreadyCreatedNewBlock = false;
 
     public int index;
 
 
     //it's a auxiliar variable to define wich color pattern the Block will have.
-    bool colorSwitch;
+    bool _colorSwitch;
 
     void Start()
     {
         GetTilesPosition5x4();
 
-        TilesColors.TilesColor(colorSwitch, BlocksHandlerGO.GetComponent<BlockHandler>());
+        TilesColors.TilesColor(_colorSwitch, blocksHandlerGo.GetComponent<BlockHandler>());
 
         PieceSpawner.GetEnemiesInChunk();
     }
@@ -54,7 +55,7 @@ public class Block : MonoBehaviour
     {
         int row = 0, columm = 0;
 
-        foreach (GameObject tile in TilesList)
+        foreach (GameObject tile in tilesList)
         {
             if (row == 0 && columm <= 2)
             {
@@ -95,7 +96,7 @@ public class Block : MonoBehaviour
     {
         int row = 0, columm = 0;
 
-        foreach (GameObject tile in TilesList)
+        foreach (GameObject tile in tilesList)
         {
             if (row == 0 && columm <= 3)
             {
@@ -160,9 +161,9 @@ public class Block : MonoBehaviour
     {
         float createPosition = 6f; //represents the value of Y (vertex), to create a new block.
 
-        if (this.gameObject.transform.position.y <= createPosition && !alreadyCreatedNewBlock)
+        if (this.gameObject.transform.position.y <= createPosition && !_alreadyCreatedNewBlock)
         {
-            alreadyCreatedNewBlock = true;
+            _alreadyCreatedNewBlock = true;
             StartCoroutine(CreateBlock()); //initialize Coroutine CreateBlock()
         }
     }
@@ -181,13 +182,13 @@ public class Block : MonoBehaviour
         //PieceSpawner.GetEnemiesInChunk();
 
 
-        if (colorSwitch)
+        if (_colorSwitch)
         {
-            newBlock.GetComponent<Block>().colorSwitch = false;
+            newBlock.GetComponent<Block>()._colorSwitch = false;
         }
         else
         {
-            newBlock.GetComponent<Block>().colorSwitch = true;
+            newBlock.GetComponent<Block>()._colorSwitch = true;
         }
     }
 }

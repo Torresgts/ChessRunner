@@ -22,14 +22,15 @@ public class AdManager : MonoBehaviour
 
     void RequestBanner()
     {
-        string bannerID = "ca-app-pub-3940256099942544/6300978111";
+        string bannerID = "ca-app-pub-9506211863408963/7069029599";
         bannerAD = new BannerView(bannerID, AdSize.SmartBanner, AdPosition.Bottom);
 
         //For real app
-        //AdRequest adRequest = new AdRequest.Builder().Build();
+        AdRequest adRequest = new AdRequest.Builder().Build();
         DisplayBanner();
+        
         //For test
-        AdRequest adRequest = new AdRequest.Builder().AddTestDevice("2077ef9a63d2b398840261c8221a0c9b").Build();
+       // AdRequest adRequest = new AdRequest.Builder().AddTestDevice("2077ef9a63d2b398840261c8221a0c9b").Build();
 
         bannerAD.LoadAd(adRequest);
 

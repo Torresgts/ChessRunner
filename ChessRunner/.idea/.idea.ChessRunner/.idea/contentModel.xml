@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Torres\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Torres\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_ChessRunner.-1356473134.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Torres\Desktop\ChessRunner\ChessRunner" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="GoogleMobileAds" t="Include">
+          <e p="Api" t="Include">
+            <e p="AdapterStatus.cs" t="Include" />
+            <e p="AdErrorEventArgs.cs" t="Include" />
+            <e p="AdFailedToLoadEventArgs.cs" t="Include" />
+            <e p="AdLoader.cs" t="Include" />
+            <e p="AdPosition.cs" t="Include" />
+            <e p="AdRequest.cs" t="Include" />
+            <e p="AdSize.cs" t="Include" />
+            <e p="BannerView.cs" t="Include" />
+            <e p="CustomNativeEventArgs.cs" t="Include" />
+            <e p="CustomNativeTemplateAd.cs" t="Include" />
+            <e p="Gender.cs" t="Include" />
+            <e p="InitializationStatus.cs" t="Include" />
+            <e p="InterstitialAd.cs" t="Include" />
+            <e p="Mediation" t="Include">
+              <e p="MediationExtras.cs" t="Include" />
+            </e>
+            <e p="MobileAds.cs" t="Include" />
+            <e p="Reward.cs" t="Include" />
+            <e p="RewardBasedVideoAd.cs" t="Include" />
+            <e p="RewardedAd.cs" t="Include" />
+            <e p="ServerSideVerificationOptions.cs" t="Include" />
+          </e>
+          <e p="Common" t="Include">
+            <e p="DummyClient.cs" t="Include" />
+            <e p="IAdLoaderClient.cs" t="Include" />
+            <e p="IBannerClient.cs" t="Include" />
+            <e p="ICustomNativeTemplateClient.cs" t="Include" />
+            <e p="IInitializationStatusClient.cs" t="Include" />
+            <e p="IInterstitialClient.cs" t="Include" />
+            <e p="IMobileAdsClient.cs" t="Include" />
+            <e p="IRewardBasedVideoAdClient.cs" t="Include" />
+            <e p="IRewardedAdClient.cs" t="Include" />
+            <e p="MobileAdsEventExecutor.cs" t="Include" />
+            <e p="RewardedAdDummyClient.cs" t="Include" />
+            <e p="Utils.cs" t="Include" />
+          </e>
+          <e p="Editor" t="Include">
+            <e p="GoogleMobileAdsDependencies.xml" t="Include" />
+            <e p="GoogleMobileAdsSettings.cs" t="Include" />
+            <e p="GoogleMobileAdsSettingsEditor.cs" t="Include" />
+            <e p="ManifestProcessor.cs" t="Include" />
+            <e p="PListProcessor.cs" t="Include" />
+          </e>
+          <e p="Platforms" t="Include">
+            <e p="Android" t="Include">
+              <e p="AdLoaderClient.cs" t="Include" />
+              <e p="BannerClient.cs" t="Include" />
+              <e p="CustomNativeTemplateClient.cs" t="Include" />
+              <e p="InitializationStatusClient.cs" t="Include" />
+              <e p="InterstitialClient.cs" t="Include" />
+              <e p="MobileAdsClient.cs" t="Include" />
+              <e p="RewardBasedVideoAdClient.cs" t="Include" />
+              <e p="RewardedAdClient.cs" t="Include" />
+              <e p="Utils.cs" t="Include" />
+            </e>
+            <e p="GoogleMobileAdsClientFactory.cs" t="Include" />
+            <e p="iOS" t="Include">
+              <e p="AdLoaderClient.cs" t="Include" />
+              <e p="BannerClient.cs" t="Include" />
+              <e p="CustomNativeTemplateClient.cs" t="Include" />
+              <e p="Externs.cs" t="Include" />
+              <e p="InitializationStatusClient.cs" t="Include" />
+              <e p="InterstitialClient.cs" t="Include" />
+              <e p="MobileAdsClient.cs" t="Include" />
+              <e p="MonoPInvokeCallbackAttribute.cs" t="Include" />
+              <e p="RewardBasedVideoAdClient.cs" t="Include" />
+              <e p="RewardedAdClient.cs" t="Include" />
+              <e p="Utils.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="PlayServicesResolver" t="Include">
+          <e p="Editor" t="Include">
+            <e p="play-services-resolver_v1.2.124.0.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="Android" t="Include">
+            <e p="GoogleMobileAdsPlugin" t="Include">
+              <e p="AndroidManifest.xml" t="Include" />
+            </e>
+          </e>
+          <e p="Pixelplacement" t="Include">
+            <e p="iTween" t="Include">
+              <e p="iTween.cs" t="Include" />
+              <e p="ReadMe!" t="Include">
+                <e p="ReadMe!.txt" t="Include" />
+              </e>
+              <e p="Sample" t="Include">
+                <e p="MoveSample.cs" t="Include" />
+                <e p="RotateSample.cs" t="Include" />
+                <e p="SampleInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Ads" t="Include">
+            <e p="AdManager.cs" t="Include" />
+            <e p="AdMobHandler.cs" t="Include" />
+          </e>
+          <e p="Audio" t="Include">
+            <e p="MusicManager.cs" t="Include" />
+          </e>
+          <e p="Block.cs" t="Include" />
+          <e p="BlockHandler.cs" t="Include" />
+          <e p="ChunksAssets" t="Include">
+            <e p="ChunkTileListScriptableObject.cs" t="Include" />
+            <e p="ChunkTileScriptableObject.cs" t="Include" />
+          </e>
+          <e p="ColorAssets" t="Include">
+            <e p="ColorTypeListScriptableObject.cs" t="Include" />
+            <e p="ColorTypeScriptableObject.cs" t="Include" />
+          </e>
+          <e p="Editor" t="Include">
+            <e p="Unity.TextMeshPro.Editor.asmdef" t="Include" />
+          </e>
+          <e p="EnemyEnumerator.cs" t="Include" />
+          <e p="Experience" t="Include">
+            <e p="ExperienceData.cs" t="Include" />
+            <e p="ExperienceUpBehaviour.cs" t="Include" />
+          </e>
+          <e p="GameColor" t="Include">
+            <e p="GameColorChanger.cs" t="Include" />
+          </e>
+          <e p="Gameplay" t="Include">
+            <e p="GameplayManager.cs" t="Include" />
+          </e>
+          <e p="Horse.cs" t="Include" />
+          <e p="HorseColliderScript.cs" t="Include" />
+          <e p="HorseMovement.cs" t="Include" />
+          <e p="Loading" t="Include">
+            <e p="LoadingManager.cs" t="Include" />
+          </e>
+          <e p="MainMenu" t="Include">
+            <e p="LoadGameplay.cs" t="Include" />
+            <e p="MainMenuManager.cs" t="Include" />
+          </e>
+          <e p="Pieces" t="Include">
+            <e p="Bishop" t="Include">
+              <e p="BihopTimer.cs" t="Include" />
+              <e p="Bishop.cs" t="Include" />
+              <e p="BishopMoves.cs" t="Include" />
+              <e p="BishopObstacleMove.cs" t="Include" />
+            </e>
+            <e p="Pawn" t="Include">
+              <e p="Pawn.cs" t="Include" />
+              <e p="PawnMoves.cs" t="Include" />
+            </e>
+            <e p="Rook" t="Include">
+              <e p="Rook.cs" t="Include" />
+              <e p="RookMoves.cs" t="Include" />
+              <e p="RookObstacleMove.cs" t="Include" />
+              <e p="RookTimer.cs" t="Include" />
+            </e>
+          </e>
+          <e p="PieceSpawner.cs" t="Include" />
+          <e p="Runtime" t="Include">
+            <e p="AssemblyInfo.cs.cs" t="Include" />
+            <e p="FastAction.cs" t="Include" />
+            <e p="MaterialReferenceManager.cs" t="Include" />
+            <e p="TextContainer.cs" t="Include" />
+            <e p="TextMeshPro.cs" t="Include" />
+            <e p="TextMeshProUGUI.cs" t="Include" />
+            <e p="TMP_Asset.cs" t="Include" />
+            <e p="TMP_Character.cs" t="Include" />
+            <e p="TMP_CharacterInfo.cs" t="Include" />
+            <e p="TMP_ColorGradient.cs" t="Include" />
+            <e p="TMP_CoroutineTween.cs" t="Include" />
+            <e p="TMP_DefaultControls.cs" t="Include" />
+            <e p="TMP_Dropdown.cs" t="Include" />
+            <e p="TMP_FontAsset.cs" t="Include" />
+            <e p="TMP_FontAssetCommon.cs" t="Include" />
+            <e p="TMP_FontAssetUtilities.cs" t="Include" />
+            <e p="TMP_FontFeaturesCommon.cs" t="Include" />
+            <e p="TMP_FontFeatureTable.cs" t="Include" />
+            <e p="TMP_InputField.cs" t="Include" />
+            <e p="TMP_InputValidator.cs" t="Include" />
+            <e p="TMP_LineInfo.cs" t="Include" />
+            <e p="TMP_ListPool.cs" t="Include" />
+            <e p="TMP_MaterialManager.cs" t="Include" />
+            <e p="TMP_MeshInfo.cs" t="Include" />
+            <e p="TMP_ObjectPool.cs" t="Include" />
+            <e p="TMP_PackageResourceImporter.cs" t="Include" />
+            <e p="TMP_RichTextTagsCommon.cs" t="Include" />
+            <e p="TMP_RichTextTagStack.cs" t="Include" />
+            <e p="TMP_ScrollbarEventHandler.cs" t="Include" />
+            <e p="TMP_SelectionCaret.cs" t="Include" />
+            <e p="TMP_Settings.cs" t="Include" />
+            <e p="TMP_ShaderUtilities.cs" t="Include" />
+            <e p="TMP_Sprite.cs" t="Include" />
+            <e p="TMP_SpriteAnimator.cs" t="Include" />
+            <e p="TMP_SpriteAsset.cs" t="Include" />
+            <e p="TMP_SpriteAssetImportFormats.cs" t="Include" />
+            <e p="TMP_SpriteCharacter.cs" t="Include" />
+            <e p="TMP_SpriteGlyph.cs" t="Include" />
+            <e p="TMP_Style.cs" t="Include" />
+            <e p="TMP_StyleSheet.cs" t="Include" />
+            <e p="TMP_SubMesh.cs" t="Include" />
+            <e p="TMP_SubMeshUI.cs" t="Include" />
+            <e p="TMP_Text.cs" t="Include" />
+            <e p="TMP_TextElement.cs" t="Include" />
+            <e p="TMP_TextElement_Legacy.cs" t="Include" />
+            <e p="TMP_TextInfo.cs" t="Include" />
+            <e p="TMP_TextParsingUtilities.cs" t="Include" />
+            <e p="TMP_TextUtilities.cs" t="Include" />
+            <e p="TMP_UpdateManager.cs" t="Include" />
+            <e p="TMP_UpdateRegistery.cs" t="Include" />
+            <e p="TMPro_EventManager.cs" t="Include" />
+            <e p="TMPro_ExtensionMethods.cs" t="Include" />
+            <e p="TMPro_MeshUtilities.cs" t="Include" />
+            <e p="TMPro_Private.cs" t="Include" />
+            <e p="TMPro_UGUI_Private.cs" t="Include" />
+            <e p="Unity.TextMeshPro.asmdef" t="Include" />
+          </e>
+          <e p="SceneHandler.cs" t="Include" />
+          <e p="Shaders" t="Include">
+            <e p="BLUR.shader" t="Include" />
+          </e>
+          <e p="Tile.cs" t="Include" />
+          <e p="TilesColors.cs" t="Include" />
+        </e>
+        <e p="Tests" t="Include">
+          <e p="Editor" t="Include">
+            <e p="TMP_EditorTests.cs" t="Include" />
+            <e p="Unity.TextMeshPro.Editor.Tests.asmdef" t="Include" />
+          </e>
+          <e p="Runtime" t="Include">
+            <e p="TMP_RuntimeTests.cs" t="Include" />
+            <e p="Unity.TextMeshPro.Tests.asmdef" t="Include" />
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+              <e p="TMP_Bitmap.shader" t="Include" />
+              <e p="TMP_SDF Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface.shader" t="Include" />
+              <e p="TMP_SDF.shader" t="Include" />
+              <e p="TMP_Sprite.shader" t="Include" />
+              <e p="TMPro.cginc" t="Include" />
+              <e p="TMPro_Properties.cginc" t="Include" />
+              <e p="TMPro_Surface.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="ChessRunner.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Unity.TextMeshPro.csproj" t="IncludeRecursive" />
+      <e p="Unity.TextMeshPro.Editor.Tests.csproj" t="IncludeRecursive" />
+      <e p="Unity.TextMeshPro.Tests.csproj" t="IncludeRecursive" />
+    </e>
+  </component>
+</project>

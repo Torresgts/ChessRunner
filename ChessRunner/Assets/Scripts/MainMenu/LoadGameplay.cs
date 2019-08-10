@@ -55,4 +55,9 @@ public class LoadGameplay : MonoBehaviour
 
         SceneManager.UnloadScene(actualScene);
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }

@@ -121,6 +121,7 @@ public class Tile : MonoBehaviour
     public void OnStartHorseMove()
     {
         TurnAllHorseColliderOff();
+        horseGO.isMoving = true;
     }
 
     public void OnFinishedHorseMove()
@@ -128,6 +129,8 @@ public class Tile : MonoBehaviour
         //COLOCAR SOM DO CAVALO TERMINANDO MOVIMENTO AQUI
 
         TurnAllHorseColliderOn();
+        horseGO.isMoving = false;
+        horseGO.particle.Play();
     }
 
     private static void TurnAllHorseColliderOn()

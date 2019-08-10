@@ -8,10 +8,14 @@ public class Horse : MonoBehaviour
 
     public static bool playerIsDead = false;
 
+    public bool isMoving = false;
+
     public Collider2D playerCol;
     //public Collider2D playerColAux;
 
     public Collider2D[] moveHints;
+
+    public ParticleSystem particle;
 
     public List<Collider2D> hintList = new List<Collider2D>();
 

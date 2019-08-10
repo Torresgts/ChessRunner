@@ -7,13 +7,18 @@ public class Rook : MonoBehaviour
 {
     public GameObject[] possibleMoveGO;
 
-    RectTransform rt;
+    private RectTransform rt;
 
     public int time = 2;
 
     private void Awake()
     {
         rt = this.gameObject.GetComponent<RectTransform>();
+        rt.sizeDelta = new Vector2(250, 250);
+    }
+
+    private void Start()
+    {
         rt.sizeDelta = new Vector2(250, 250);
     }
 

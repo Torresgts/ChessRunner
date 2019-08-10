@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 7655324686531295363}
   - component: {fileID: 4771415174265282216}
   - component: {fileID: 5694709471188065552}
+  - component: {fileID: 288517302288361170}
   m_Layer: 0
   m_Name: Bishop
   m_TagString: Piece
@@ -251,6 +252,32 @@ MonoBehaviour:
   - {fileID: 8380031819468640266}
   - {fileID: 2653171657294815577}
   time: 2
+--- !u!61 &288517302288361170
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544012679092770457}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 300, y: 300}
+  m_EdgeRadius: 0
 --- !u!1 &2653171657294815577
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,10 +738,10 @@ RectTransform:
   m_Father: {fileID: 544012679092770470}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 103.3, y: 102.5}
-  m_SizeDelta: {x: -207, y: -205.5}
+  m_AnchoredPosition: {x: 103.3, y: -58.5}
+  m_SizeDelta: {x: -207, y: 116.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &3209223170747728192
 BoxCollider2D:
