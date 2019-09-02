@@ -180,15 +180,7 @@ public class Block : MonoBehaviour
         newBlock.name = "Block5x4 Inst " + BlockHandler.numberOfBlocks;
 
         //PieceSpawner.GetEnemiesInChunk();
-
-
-        if (_colorSwitch)
-        {
-            newBlock.GetComponent<Block>()._colorSwitch = false;
-        }
-        else
-        {
-            newBlock.GetComponent<Block>()._colorSwitch = true;
-        }
+        
+        newBlock.GetComponent<Block>()._colorSwitch = !_colorSwitch;
     }
 }

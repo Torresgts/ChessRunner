@@ -22,19 +22,6 @@ public class Tile : MonoBehaviour
         horseGO = FindObjectOfType<Horse>();
     }
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     #region OnTrigger Functions
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -62,11 +49,6 @@ public class Tile : MonoBehaviour
 
         if(blockHandler == null) blockHandler = GameObject.FindObjectOfType<BlockHandler>();
         blockHandler.StartMoving();
-
-        //Horse.horse.transform.position = this.gameObject.transform.position;
-
-
-
         //When Start
 
         OnStartHorseMove();
@@ -114,7 +96,7 @@ public class Tile : MonoBehaviour
 
     private void AddPoint()
     {
-        GameplayManager.points++;
+        GameplayManager.score++;
     }
 
 
@@ -135,8 +117,6 @@ public class Tile : MonoBehaviour
 
     private static void TurnAllHorseColliderOn()
     {
-       
-       
 
         foreach (Collider2D colHint in horseGO.hintList)
         {

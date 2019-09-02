@@ -9,21 +9,27 @@ public class AdManager : MonoBehaviour
 
     private string app_id = "ca-app-pub-9506211863408963~4225086861";
 
-    private BannerView bannerAD;
+    private BannerView _bannerAd;
 
     // Start is called before the first frame update
     void Start()
     {
         // When publish
-        //MobileAds.Initialize(app_id);
-
-        RequestBanner();
+        MobileAds.Initialize(app_id);
+        
+        #if UNITY_EDITOR
+            print("Unity Version");
+        
+        #elif PLATFORM_ANDROID
+            RequestBanner();
+            print("Android Version");
+        #endif
     }
 
     void RequestBanner()
     {
         string bannerID = "ca-app-pub-9506211863408963/7069029599";
-        bannerAD = new BannerView(bannerID, AdSize.SmartBanner, AdPosition.Bottom);
+        _bannerAd = new BannerView(bannerID, AdSize.SmartBanner, AdPosition.Bottom);
 
         //For real app
         AdRequest adRequest = new AdRequest.Builder().Build();
@@ -32,7 +38,7 @@ public class AdManager : MonoBehaviour
         //For test
        // AdRequest adRequest = new AdRequest.Builder().AddTestDevice("2077ef9a63d2b398840261c8221a0c9b").Build();
 
-        bannerAD.LoadAd(adRequest);
+        _bannerAd.LoadAd(adRequest);
 
         //Show banner for test
         
@@ -40,7 +46,7 @@ public class AdManager : MonoBehaviour
 
     public void DisplayBanner()
     {
-        bannerAD.Show();
+        _bannerAd.Show();
     }
 
     //Handle Events
@@ -70,12 +76,13 @@ public class AdManager : MonoBehaviour
     void HandleBannerADEvents()
     {
         // Called when an ad request has successfully loaded.
-        bannerAD.OnAdLoaded += HandleOnAdLoaded;
+        _bannerAd.OnAdLoaded += HandleOnAdLoaded;
         // Called when an ad request failed to load.
-        bannerAD.OnAdFailedToLoad += HandleOnAdFailedToLoad;
+        _bannerAd.OnAdFailedToLoad += HandleOnAdFailedToLoad;
         // Called when an ad is clicked.
-        bannerAD.OnAdOpening += HandleOnAdOpened;
+        _bannerAd.OnAdOpening += HandleOnAdOpened;
         // Called when the user returned from the app after an ad click.
-        bannerAD.OnAdClosed += HandleOnAdClosed;
+        _bannerAd.OnAdClosed += HandleOnAdClosed;
     }
+
 }

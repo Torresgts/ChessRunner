@@ -47,6 +47,8 @@ public class Horse : MonoBehaviour
 
         if (this.gameObject.transform.position.y <= limit)
         {
+            //GameplayManager.GetBestScore();
+            GameplayManager.SaveBestScore();
             playerIsDead = true;
             Destroy(this.gameObject);
         }

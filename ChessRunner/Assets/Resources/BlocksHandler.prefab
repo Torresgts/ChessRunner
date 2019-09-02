@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d633806f49d1a243a43c74f8650b67b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  horseGO: {fileID: 0}
 --- !u!1 &8114649686117318486
 GameObject:
   m_ObjectHideFlags: 0
@@ -171,7 +172,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 5868334563196715838, guid: 6d46ad64cd0290f4687eb5aca9bf36d5,
+  m_Sprite: {fileID: -8285002109947433270, guid: 1543300cd9ca7fa42bfa66f5b3394577,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 1
@@ -551,6 +552,11 @@ PrefabInstance:
       propertyPath: BlocksHandlerGO
       value: 
       objectReference: {fileID: 8114649686305937183}
+    - target: {fileID: 3833423555492560243, guid: 9467d3aed6843da4c9b68b42c9cc6749,
+        type: 3}
+      propertyPath: blocksHandlerGo
+      value: 
+      objectReference: {fileID: 8114649686305937183}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9467d3aed6843da4c9b68b42c9cc6749, type: 3}
 --- !u!224 &8114649684792318414 stripped
@@ -676,12 +682,12 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1237344048090354263, guid: 6f236de504bbeba4da3438d838452041,
+    - target: {fileID: 1237344048090354257, guid: 6f236de504bbeba4da3438d838452041,
         type: 3}
       propertyPath: m_SortingOrder
       value: 19
       objectReference: {fileID: 0}
-    - target: {fileID: 1237344048090354257, guid: 6f236de504bbeba4da3438d838452041,
+    - target: {fileID: 1237344048090354263, guid: 6f236de504bbeba4da3438d838452041,
         type: 3}
       propertyPath: m_SortingOrder
       value: 19
@@ -1420,6 +1426,11 @@ PrefabInstance:
     - target: {fileID: 4657132935702963124, guid: 0ed6b3c33390b5e4fa4754f18061857f,
         type: 3}
       propertyPath: BlocksHandlerGO
+      value: 
+      objectReference: {fileID: 8114649686305937183}
+    - target: {fileID: 4657132935702963124, guid: 0ed6b3c33390b5e4fa4754f18061857f,
+        type: 3}
+      propertyPath: blocksHandlerGo
       value: 
       objectReference: {fileID: 8114649686305937183}
     m_RemovedComponents: []

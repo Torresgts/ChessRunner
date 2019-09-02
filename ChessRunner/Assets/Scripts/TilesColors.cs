@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class TilesColors : MonoBehaviour
 {
-
-
     public static Color firstColor;
     public static Color secondColor;
 

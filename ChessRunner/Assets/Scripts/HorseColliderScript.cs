@@ -17,6 +17,7 @@ public class HorseColliderScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Piece") && !horseGO.isMoving)
         {
             Destroy(collision.gameObject);
+            GameplayManager.score = GameplayManager.score + 3;
         }
     }
 }

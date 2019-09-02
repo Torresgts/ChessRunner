@@ -1,40 +1,40 @@
 fileFormatVersion: 2
-guid: 472166d59356f8949b7622154e9f1467
+guid: 1543300cd9ca7fa42bfa66f5b3394577
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7174362263298466010
-    second: SuperChessRunnerAtlas_0
+      213: -8285002109947433270
+    second: ChessRunnerAtlasFinal_0
   - first:
-      213: 639453799322404633
-    second: SuperChessRunnerAtlas_1
+      213: 5463488069412382156
+    second: ChessRunnerAtlasFinal_1
   - first:
-      213: -5754108049195749592
-    second: SuperChessRunnerAtlas_2
+      213: -4382065086411504207
+    second: ChessRunnerAtlasFinal_2
   - first:
-      213: -3052582431019038189
-    second: SuperChessRunnerAtlas_3
+      213: 1116474141471865707
+    second: ChessRunnerAtlasFinal_3
   - first:
-      213: -8911793082270539550
-    second: SuperChessRunnerAtlas_4
+      213: 6384635755472665376
+    second: ChessRunnerAtlasFinal_4
   - first:
-      213: 9044612627313693511
-    second: SuperChessRunnerAtlas_5
+      213: 6977256531301833133
+    second: ChessRunnerAtlasFinal_5
   - first:
-      213: -341256275932151310
-    second: SuperChessRunnerAtlas_6
+      213: -341208335837612164
+    second: ChessRunnerAtlasFinal_6
   - first:
-      213: -4450098303086396433
-    second: SuperChessRunnerAtlas_7
+      213: -7763348608724122266
+    second: ChessRunnerAtlasFinal_7
   - first:
-      213: -3574121191055263521
-    second: SuperChessRunnerAtlas_8
+      213: -2091646440169624167
+    second: ChessRunnerAtlasFinal_8
   - first:
-      213: -8001319824916267826
-    second: SuperChessRunnerAtlas_9
+      213: 8148973423292896581
+    second: ChessRunnerAtlasFinal_9
   - first:
-      213: 7738787407024988541
-    second: SuperChessRunnerAtlas_10
+      213: 2270920308379139211
+    second: ChessRunnerAtlasFinal_10
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -93,7 +93,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 256
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -104,7 +104,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 256
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -115,7 +115,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Windows Store Apps
-    maxTextureSize: 256
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -126,7 +126,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: iPhone
-    maxTextureSize: 256
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -137,7 +137,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Android
-    maxTextureSize: 256
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -148,7 +148,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: WebGL
-    maxTextureSize: 256
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -161,232 +161,232 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SuperChessRunnerAtlas_0
+      name: ChessRunnerAtlasFinal_0
       rect:
         serializedVersion: 2
-        x: 16
+        x: 13
         y: 1052
-        width: 199
-        height: 330
+        width: 208
+        height: 331
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 434f7a4fb39dbc5428377867c5cbb487
-      internalID: 7174362263298466010
+      spriteID: 7daeec6a890d2dd41a49d7db0c4ee65d
+      internalID: -8285002109947433270
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SuperChessRunnerAtlas_1
+      name: ChessRunnerAtlasFinal_1
       rect:
         serializedVersion: 2
-        x: 216
+        x: 309
         y: 1052
-        width: 190
-        height: 310
+        width: 194
+        height: 312
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75c2c992092b43745868d4beb0a9f77c
-      internalID: 639453799322404633
+      spriteID: 29f4ca5b120894545a875dd228d4d15a
+      internalID: 5463488069412382156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SuperChessRunnerAtlas_2
+      name: ChessRunnerAtlasFinal_2
       rect:
         serializedVersion: 2
-        x: 417
+        x: 583
         y: 1052
-        width: 191
-        height: 317
+        width: 192
+        height: 320
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a2c319f6d6fc2b49aa618471413b35d
-      internalID: -5754108049195749592
+      spriteID: 652311a4224be824c87fa7a80296bb5e
+      internalID: -4382065086411504207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SuperChessRunnerAtlas_3
+      name: ChessRunnerAtlasFinal_3
       rect:
         serializedVersion: 2
-        x: 616
+        x: 867
         y: 1052
-        width: 191
-        height: 340
+        width: 194
+        height: 342
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 012cc771beb577046809aa659bae4bb5
-      internalID: -3052582431019038189
+      spriteID: 0de6467ebcb28b7488849be5d3bf6fa8
+      internalID: 1116474141471865707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SuperChessRunnerAtlas_4
+      name: ChessRunnerAtlasFinal_4
       rect:
         serializedVersion: 2
-        x: 841
-        y: 1052
-        width: 247
-        height: 247
+        x: 15
+        y: 797
+        width: 700
+        height: 227
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bd9f2e8d63f63547bb5be4dbae1ed74
-      internalID: -8911793082270539550
+      spriteID: a956db5b1ae99d447aeb0c7c57b352cf
+      internalID: 6384635755472665376
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SuperChessRunnerAtlas_5
+      name: ChessRunnerAtlasFinal_5
       rect:
         serializedVersion: 2
-        x: 16
-        y: 799
-        width: 696
-        height: 223
+        x: 839
+        y: 755
+        width: 249
+        height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6658e4b5a695b054d8ce1fe615dda075
-      internalID: 9044612627313693511
+      spriteID: b9ca118c5551b414ab5abc6493dbf38b
+      internalID: 6977256531301833133
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SuperChessRunnerAtlas_6
+      name: ChessRunnerAtlasFinal_6
       rect:
         serializedVersion: 2
-        x: 16
-        y: 555
-        width: 696
-        height: 223
+        x: 15
+        y: 553
+        width: 700
+        height: 227
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a2abedc4ebf4ac47bacfbc90db130ca
-      internalID: -341256275932151310
+      spriteID: b4f05a4f4ecdfdd448cf93b591eae64d
+      internalID: -341208335837612164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SuperChessRunnerAtlas_7
+      name: ChessRunnerAtlasFinal_7
       rect:
         serializedVersion: 2
-        x: 16
-        y: 312
-        width: 696
-        height: 222
+        x: 15
+        y: 309
+        width: 700
+        height: 229
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e1dfddea4588ec498f5be26e2eac08d
-      internalID: -4450098303086396433
+      spriteID: e8238bb9662165c479b0d2ca0336337f
+      internalID: -7763348608724122266
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SuperChessRunnerAtlas_8
+      name: ChessRunnerAtlasFinal_8
       rect:
         serializedVersion: 2
-        x: 17
-        y: 201
-        width: 695
-        height: 67
+        x: 15
+        y: 199
+        width: 700
+        height: 71
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43a24e0545efdb7418ad3a95ce47112b
-      internalID: -3574121191055263521
+      spriteID: 3edcdefb5b5da974f97e54018b429dce
+      internalID: -2091646440169624167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SuperChessRunnerAtlas_9
+      name: ChessRunnerAtlasFinal_9
       rect:
         serializedVersion: 2
-        x: 17
+        x: 15
         y: 117
-        width: 695
-        height: 67
+        width: 700
+        height: 69
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d3099782efc13f42bda535eeba9fe10
-      internalID: -8001319824916267826
+      spriteID: 56a88a10d04ad684faa217155322e303
+      internalID: 8148973423292896581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SuperChessRunnerAtlas_10
+      name: ChessRunnerAtlasFinal_10
       rect:
         serializedVersion: 2
-        x: 16
-        y: 34
-        width: 696
-        height: 67
+        x: 10
+        y: 32
+        width: 705
+        height: 71
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27865794f5f040344b021655a2a9d3e6
-      internalID: 7738787407024988541
+      spriteID: 80a6a2fcab74a1b40ab6a3613590364c
+      internalID: 2270920308379139211
       vertices: []
       indices: 
       edges: []
@@ -394,7 +394,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8a3e93bac3165a14eb9b5b3736333f96
+    spriteID: 5f7fe6f880419574b908c0d0be7a345c
     internalID: 0
     vertices: []
     indices: 

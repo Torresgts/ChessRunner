@@ -9,6 +9,7 @@ public class LoadGameplay : MonoBehaviour
 	{
 		GameObject.FindObjectOfType<MusicManager>().ChangeMusic();
 		StartCoroutine(LoadGameplayAsync());
+		GameplayManager.score = 0;
 	}
 
 
@@ -16,6 +17,7 @@ public class LoadGameplay : MonoBehaviour
 	{
 		StartCoroutine(LoadGameplayAsync());
         Horse.playerIsDead = false;
+        GameplayManager.score = 0;
 	}
 
 	public void LoadMainMenu()
@@ -59,5 +61,10 @@ public class LoadGameplay : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+    
+    public void LoadPrivacyPolicyPage()
+    {
+	    Application.OpenURL("http://torresgames.com.br/privacy.html");
     }
 }

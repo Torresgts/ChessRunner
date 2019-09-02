@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: ColorTypeData_RedBlack
   m_EditorClassIdentifier: 
   colorName: Classic
-  tileA: {r: 0.37647063, g: 0.011764707, b: 0, a: 1}
-  tileB: {r: 0, g: 0, b: 0, a: 1}
+  tileA: {r: 0.6603774, g: 0.11418376, b: 0.09656461, a: 1}
+  tileB: {r: 1, g: 1, b: 1, a: 1}
   pieces: {r: 0, g: 0, b: 0, a: 1}
