@@ -11,10 +11,23 @@ public class Score : MonoBehaviour
     [SerializeField]
     private TMP_Text bestScoreText;
 
-    private const string ScoreStr = "SCORE: ";
+    private string ScoreStr = "SCORE: ";
     
     private void Awake()
     {
+        if (Application.systemLanguage == SystemLanguage.English)
+        {
+            ScoreStr = "SCORE: ";
+        }
+        else if(Application.systemLanguage == SystemLanguage.Portuguese)
+        {
+            ScoreStr = "PONTOS: ";
+        }
+        else if(Application.systemLanguage == SystemLanguage.Spanish)
+        {
+            ScoreStr = "PUNTUACIÓN: ";
+        }
+        
         _scoreText = this.gameObject.GetComponent<TMP_Text>();
     }
 

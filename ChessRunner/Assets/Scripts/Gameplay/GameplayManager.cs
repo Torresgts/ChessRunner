@@ -15,7 +15,6 @@ public class GameplayManager : MonoBehaviour
     {
         score = 0;
         BestScore = PlayerPrefs.GetInt(BestScoreKey, 20);
-       // GetBestScore();
     }
 
     /*public static int GetScore()
