@@ -39,7 +39,10 @@ public class RookMoves : MonoBehaviour
                                 Horse.playerIsDead = true;
 
                                 BlockHandler.ShakeBlocks();
-                            }
+                                Handheld.Vibrate();
+                                Score.GetBestScore();
+
+                }
                         }
                         else if (childNumber != 1 && childNumber != 3 && childNumber != 5)
                         {
@@ -56,9 +59,11 @@ public class RookMoves : MonoBehaviour
                                 Horse.horse.gameObject.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
 
                                 Horse.playerIsDead = true;
-
+                                Handheld.Vibrate();
                                 BlockHandler.ShakeBlocks();
-                        }
+                                Handheld.Vibrate();
+                                Score.GetBestScore();
+            }
                 }
     }
 }

@@ -14,6 +14,7 @@ public class Tile : MonoBehaviour
 
     public static Horse horseGO;
 
+    bool hasPiece = false;
 
     private void Awake()
     {
@@ -30,6 +31,11 @@ public class Tile : MonoBehaviour
         {
             TileButton.enabled = true;
             TileAnim.SetBool("PossibleMove", true);
+        }
+
+        if (collision.gameObject.CompareTag("Piece"))
+        {
+            hasPiece = true;
         }
     }
 
@@ -113,6 +119,17 @@ public class Tile : MonoBehaviour
         TurnAllHorseColliderOn();
         horseGO.isMoving = false;
         horseGO.particle.Play();
+
+        GameObject FloatText = Instantiate(Resources.Load("FloatingText"), new Vector3(0,0,0), Quaternion.identity, UIAux.aux.gameObject.transform.parent) as GameObject;
+        if(hasPiece)
+        {
+            FloatText.gameObject.GetComponent<FloatingText>().fantastic = true;
+        }
+        else
+        {
+            FloatText.gameObject.GetComponent<FloatingText>().great = true;
+        }
+        
     }
 
     private static void TurnAllHorseColliderOn()

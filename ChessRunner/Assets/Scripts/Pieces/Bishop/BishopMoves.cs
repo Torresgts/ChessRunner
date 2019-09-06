@@ -38,6 +38,8 @@ public class BishopMoves : MonoBehaviour
                     Horse.playerIsDead = true;
 
                     BlockHandler.ShakeBlocks();
+                    Handheld.Vibrate();
+                    Score.GetBestScore();
                 }
             }
             else if (childNumber != 1 && childNumber != 3)
@@ -57,6 +59,8 @@ public class BishopMoves : MonoBehaviour
                 Horse.playerIsDead = true;
 
                 BlockHandler.ShakeBlocks();
+                Handheld.Vibrate();
+                Score.GetBestScore();
             }
         }
     }

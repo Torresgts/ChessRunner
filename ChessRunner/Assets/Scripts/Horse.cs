@@ -47,10 +47,11 @@ public class Horse : MonoBehaviour
 
         if (this.gameObject.transform.position.y <= limit)
         {
-            //GameplayManager.GetBestScore();
-            GameplayManager.SaveBestScore();
+            //Score save here
+            Score.GetBestScore();
             playerIsDead = true;
             Destroy(this.gameObject);
+            Handheld.Vibrate();
         }
     }
 

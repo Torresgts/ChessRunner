@@ -31,6 +31,8 @@ public class PawnMoves : MonoBehaviour
             Horse.playerIsDead = true;
 
             BlockHandler.ShakeBlocks();
+            Handheld.Vibrate();
+            Score.GetBestScore();
         }
     }
 }
