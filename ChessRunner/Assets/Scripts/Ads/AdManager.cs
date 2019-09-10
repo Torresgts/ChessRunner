@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 using GoogleMobileAds.Api;
 
 public class AdManager : MonoBehaviour
@@ -11,6 +12,11 @@ public class AdManager : MonoBehaviour
 
     private BannerView _bannerAd;
 
+    private RewardBasedVideoAd _rewardAd;
+
+    [SerializeField]
+    private GameObject GameOverPopUpGO;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +25,13 @@ public class AdManager : MonoBehaviour
         
         #if UNITY_EDITOR
             print("Unity Version");
-        
+
         #elif PLATFORM_ANDROID
             RequestBanner();
             print("Android Version");
         #endif
+
+        RewardSubscriptions();
     }
 
     void RequestBanner()
@@ -47,6 +55,36 @@ public class AdManager : MonoBehaviour
     public void DisplayBanner()
     {
         _bannerAd.Show();
+    }
+
+    public void RequestRewardVideo()
+    {
+        string rewardVideoID = "ca-app-pub-9506211863408963/4197005971";
+        _rewardAd = RewardBasedVideoAd.Instance;
+
+        AdRequest request = new AdRequest.Builder().Build();
+       
+        // Load the rewarded video ad with the request.
+        _rewardAd.LoadAd(request, rewardVideoID);
+
+        //ReviveHorse();
+    }
+
+    public void LoadRewardVideoAd()
+    {
+       
+    }
+
+    public void RewardSubscriptions()
+    {
+        // Called when an ad request has successfully loaded.
+       // _rewardAd.OnAdLoaded += HandleRewardBasedVideoLoaded;
+        // Called when an ad request failed to load.
+        //_rewardAd.OnAdFailedToLoad += HandleRewardBasedVideoFailedToLoad;
+        
+        // Called when the user should be rewarded for watching a video.
+       // _rewardAd.OnAdRewarded += HandleRewardBasedVideoRewarded;
+        
     }
 
     //Handle Events
@@ -84,5 +122,40 @@ public class AdManager : MonoBehaviour
         // Called when the user returned from the app after an ad click.
         _bannerAd.OnAdClosed += HandleOnAdClosed;
     }
+
+    public void HandleRewardBasedVideoLoaded(object sender, EventArgs args)
+    {
+       // Turn Button On
+
+    }
+
+    public void HandleRewardBasedVideoFailedToLoad(object sender, AdFailedToLoadEventArgs args)
+    {
+       // RequestRewardVideo();
+    }
+
+    public void HandleRewardBasedVideoClosed(object sender, EventArgs args)
+    {
+        
+    }
+
+    public void HandleRewardBasedVideoRewarded(object sender, Reward args)
+    {
+        string type = args.Type;
+        double amount = args.Amount;
+
+        ReviveHorse();
+       
+    }
+
+    public void ReviveHorse()
+    {
+        Horse.horse.gameObject.GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+
+        Horse.playerIsDead = false;
+
+        GameOverPopUpGO.SetActive(false);
+    }
+
 
 }

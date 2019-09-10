@@ -42,6 +42,7 @@ public class SceneHandler : MonoBehaviour
     IEnumerator SpawnBlockHandler()
     {
         yield return new WaitForSeconds(0f);
-        BlockHandlerGameObject = Instantiate(Resources.Load("BlocksHandler"), new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + 1, this.gameObject.transform.position.z), Quaternion.identity, gameObject.transform) as GameObject;
+        BlockHandlerGameObject = Instantiate(Resources.Load("BlocksHandler"), new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + 1, this.gameObject.transform.position.z), Quaternion.Euler(0,0, 180), gameObject.transform) as GameObject;
+        
     }
 }

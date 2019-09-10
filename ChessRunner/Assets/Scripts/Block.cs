@@ -31,13 +31,14 @@ public class Block : MonoBehaviour
         TilesColors.TilesColor(_colorSwitch, blocksHandlerGo.GetComponent<BlockHandler>());
 
         PieceSpawner.GetEnemiesInChunk();
+        
     }
 
     private void Update()
     {
         DestroyBlockOnLimit();
 
-        CreateNewBlock();
+        //CreateNewBlock(); //Here
     }
 
     private void DestroyBlockOnLimit() //If this block get to a Y (vertex) limit, it's destroyed. 
@@ -46,7 +47,7 @@ public class Block : MonoBehaviour
 
         if (this.gameObject.transform.position.y <= limit)
         {
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
             //Debug.Log("Block Destroyed");
         }
     }
@@ -159,9 +160,16 @@ public class Block : MonoBehaviour
 
     private void CreateNewBlock() //function to decide when to call CreateBlock() Coroutine.
     {
-        float createPosition = 6f; //represents the value of Y (vertex), to create a new block.
+        float createPosition = 6f; //represents the value of Y (vertex), to create a new block. 6f
 
-        if (this.gameObject.transform.position.y <= createPosition && !_alreadyCreatedNewBlock)
+        //if (this.gameObject.transform.position.y <= createPosition && !_alreadyCreatedNewBlock)
+        //{
+        //    _alreadyCreatedNewBlock = true;
+        //    StartCoroutine(CreateBlock()); //initialize Coroutine CreateBlock()
+        //}
+
+        //new way of spawning
+        if (!_alreadyCreatedNewBlock)
         {
             _alreadyCreatedNewBlock = true;
             StartCoroutine(CreateBlock()); //initialize Coroutine CreateBlock()
@@ -170,17 +178,38 @@ public class Block : MonoBehaviour
 
     IEnumerator CreateBlock() //Create a new Block, Intantiate on Game Scene and define conditions of tiles colors.
     {
+        float _Distance;
+
         GameObject newBlock;
 
         yield return new WaitForSeconds(0.0f);
 
         //newBlock = Instantiate(this.gameObject, new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + 5.61f, this.gameObject.transform.position.z), Quaternion.identity, BlocksHandlerGO.transform) as GameObject;
-        newBlock = Instantiate(Resources.Load("Block5x4"), new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + 6.53f, this.gameObject.transform.position.z), Quaternion.identity, SceneHandler.BlockHandlerGameObject.transform) as GameObject;
+        newBlock = Instantiate(Resources.Load("Block5x4"), new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + 6.08f, this.gameObject.transform.position.z), Quaternion.Euler(0,0,180), SceneHandler.BlockHandlerGameObject.transform) as GameObject; //Usar esse aqui!!!
+        //newBlock = Instantiate(Resources.Load("Block5x4"), new Vector3(this.gameObject.transform.position.x, Camera.main.transform.position.y + 6.85f, this.gameObject.transform.position.z), Quaternion.identity, SceneHandler.BlockHandlerGameObject.transform) as GameObject;
+        
+
         BlockHandler.numberOfBlocks++;
         newBlock.name = "Block5x4 Inst " + BlockHandler.numberOfBlocks;
+        //newBlock.transform.SetAsFirstSibling();
 
         //PieceSpawner.GetEnemiesInChunk();
         
         newBlock.GetComponent<Block>()._colorSwitch = !_colorSwitch;
+
+        BlockAux.LastBlockInstancied = newBlock;
+
+        _Distance = Vector3.Distance(this.gameObject.transform.position, BlockAux.LastBlockInstancied.transform.position);
+
+        Debug.Log("Distance is: " + _Distance);
+        
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag("Creator"))
+        {
+            CreateNewBlock();
+        }
     }
 }

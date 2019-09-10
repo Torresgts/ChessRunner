@@ -35,6 +35,12 @@ public class BlockHandler : MonoBehaviour
     {
         // StartCoroutine(MoveConfig());
         //MoveBlocks(); 
+
+        if(Input.GetMouseButton(0))
+        {
+            //StartCoroutine(MoveConfig());
+           // Debug.Log("Player Died?: " + playerDied);
+        }
     }
 
     private void MoveBlocks()
@@ -61,16 +67,25 @@ public class BlockHandler : MonoBehaviour
         yield return new WaitForSeconds(waitToMove);
         //iTween.MoveAdd(this.gameObject, new Vector3(0, -4, 0), 2);
 
-        iTween.MoveAdd(this.gameObject, 
-            iTween.Hash(
-            "amount", new Vector3(0, -4, 0),
-            "time", 2f,
-            "easetype", iTween.EaseType.easeInOutQuad
-            ));
+        if (!Horse.playerIsDead)
+        {
+            iTween.MoveAdd(this.gameObject,
+                        iTween.Hash(
+                        "amount", new Vector3(0, +4, 0),
+                        "time", 2f,
+                        "easetype", iTween.EaseType.easeInOutQuad
+                        ));
+
+        }
+        else
+        {
+            // Do nothing
+        }
 
         yield return new WaitForSeconds(waitToMove);
         
-        if(!playerDied) StartCoroutine(MoveConfig());
+        //if(!playerDied)
+            StartCoroutine(MoveConfig());
     }
 
     public static void ShakeBlocks()

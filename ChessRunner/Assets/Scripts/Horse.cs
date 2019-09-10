@@ -50,8 +50,9 @@ public class Horse : MonoBehaviour
             //Score save here
             Score.GetBestScore();
             playerIsDead = true;
-            Destroy(this.gameObject);
+           // Destroy(this.gameObject);
             Handheld.Vibrate();
+            //this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x + 1);
         }
     }
 

@@ -63,7 +63,7 @@ public class Tile : MonoBehaviour
 
         iTween.MoveTo(Horse.horse,
             iTween.Hash(
-            "position", new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + 45f, this.gameObject.transform.position.z),
+            "position", new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y -45f, this.gameObject.transform.position.z),
             "time", 0.8f,
             "easetype", iTween.EaseType.easeInQuad,
             "islocal", true,
